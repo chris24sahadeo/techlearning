@@ -1,0 +1,25 @@
+/* html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+} */
+
+a {
+  color: black;
+}
+
+.brand-logo {
+  font-weight: bold;
+}
+
+li {
+  font-variant-caps: all-small-caps;
+  color: black;
+}
+
+.section-search input {
+  margin-top: 50px !important;
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: lightgray 2px solid !important;
+  border-radius: 50pt !important;
+}
