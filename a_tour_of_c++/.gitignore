@@ -1,0 +1,27 @@
+# Ignore build directory
+/build/
+
+# Ignore CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# Ignore compiled binaries
+*.o
+*.so
+*.a
+*.out
+*.exe
+
+# Ignore editor files
+*.swp
+*.swo
+*.swn
+*.bak
+*~
