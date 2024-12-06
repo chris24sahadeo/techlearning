@@ -24,7 +24,10 @@ ENV SHELL /bin/bash
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
-RUN apt-get update && apt-get install -y tmux
+RUN apt-get update && apt-get install -y tmux man-db
+
+# unminimize
+# RUN sudo unminimize
 
 COPY ./ros_entrypoint.sh /
 
