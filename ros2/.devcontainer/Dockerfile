@@ -24,7 +24,7 @@ ENV SHELL /bin/bash
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
-RUN apt-get update && apt-get install -y tmux man-db
+RUN apt-get update && apt-get install -y tmux man-db tree
 
 # unminimize
 # RUN sudo unminimize
