@@ -1,0 +1,20 @@
+services:
+  ros2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/home/ws
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /dev/dri:/dev/dri:consistent
+    working_dir: /home/ws  
+    environment:
+      DISPLAY: ${DISPLAY}
+      ROS_AUTOMATIC_DISCOVERY_RANGE: LOCALHOST
+      ROS_DOMAIN_ID: "42"
+    network_mode: "host"
+    pid: "host"
+    ipc: "host"
+    privileged: true
+    stdin_open: true
+    tty: true
