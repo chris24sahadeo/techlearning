@@ -1,4 +1,3 @@
-
 FROM osrf/ros:jazzy-desktop
 #
 #ARG USERNAME=USERNAME
@@ -24,7 +23,7 @@ ENV SHELL /bin/bash
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
-RUN apt-get update && apt-get install -y tmux man-db tree
+RUN apt-get update && apt-get install -y tmux man-db tree vim
 
 # unminimize
 # RUN sudo unminimize
